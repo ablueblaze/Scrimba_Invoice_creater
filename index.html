@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Invoice Creator</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <header class="title">
+                <h1>Invoice Creator</h1>
+                <p class="header-sub-text">
+                    Thanks for choosing GoodCorp, LLC!
+                </p>
+            </header>
+            <section>
+                <article class="invoice-field">
+                    <nav>
+                        <button id="wash-car">Wash Car: $10</button>
+                        <button id="mow-lawn">Mow Lawn: $20</button>
+                        <button id="pull-weeds">Pull Weeds: $30</button>
+                    </nav>
+                    <header class="header-task-total">
+                        <p class="header-task">TASK</p>
+                        <p class="header-total">TOTAL</p>
+                    </header>
+                    <div id="invoice-items"></div>
+                </article>
+                <article class="total-field">
+                    <header class="header-notes-total notes-total">
+                        <p class="header-notes">NOTES</p>
+                        <p class="header-total">TOTAL AMOUNT</p>
+                    </header>
+                    <div class="notes-total">
+                        <p>We accept cash, credit card, or PayPal</p>
+                        <p class="total" id="total"></p>
+                    </div>
+                    <button class="send-btn" id="send-invoice">
+                        <span class="envelope-img"
+                            ><img
+                                src="./assets/Icon.png"
+                                alt="envelope" /></span
+                        >Send invoice
+                    </button>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

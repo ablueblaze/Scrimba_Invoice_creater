@@ -1,0 +1,136 @@
+:root {
+    --prime-color: #104eb9;
+    --prime-white: #cfcfcf;
+    --prime-grey: #a0a0a040;
+    --button-color: #b1b1b1;
+    --background-color: #1b1b1b;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: var(--prime-white);
+}
+
+main {
+    height: 700px;
+    width: 650px;
+    border: 1px solid var(--prime-color);
+    /* padding: 20px; */
+}
+
+header {
+    display: flex;
+}
+
+section {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.title {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25%;
+    padding: 20px;
+    /* margin-bottom: 30px; */
+    background-color: var(--prime-color);
+    text-shadow: 0 0 9px black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.header-task-total {
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 3px solid var(--prime-grey);
+}
+
+.invoice-field {
+    height: 35%;
+}
+
+.line-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.name-section {
+    display: flex;
+    align-items: center;
+}
+
+.remove-btn {
+    background: none;
+    color: var(--prime-white);
+    border: 3px solid var(--background-color);
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.total-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-notes-total {
+    padding: 10px 0;
+    border-top: 3px solid var(--prime-grey);
+}
+
+.notes-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: var(--button-color);
+    border: 3px solid var(--button-color);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover {
+    border: 3px solid white;
+}
+
+.send-btn {
+    margin: 0 auto;
+    width: 80%;
+    background-color: var(--prime-color);
+    border: 3px solid var(--prime-color);
+    text-shadow: 0 0 5px black;
+    color: var(--prime-white);
+}
+
+.envelope-img {
+    margin-right: 20px;
+}
